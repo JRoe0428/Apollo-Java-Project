@@ -152,4 +152,6 @@ public class Spacecraft {
     public void setMissionStatus(String missionStatus) {
         this.missionStatus = missionStatus;
     }
+
+	
 }
