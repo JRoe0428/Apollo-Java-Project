@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Apollo9 extends Spacecraft {
+public class Apollo10 extends Spacecraft {
 	
 	private String color;
 	private boolean autoPilot;
@@ -9,18 +9,18 @@ public class Apollo9 extends Spacecraft {
 	private String weatherCondition;
 	private double morale;
 	
-	public Apollo9(String model, String fuelType, String launchDate, double successProbability, String color, boolean autoPilot, String locationOfLaunch, String weatherCondition, String string) {
+	public Apollo10(String model, String fuelType, String launchDate, double successProbability, String color, boolean autoPilot, String locationOfLaunch, String weatherCondition, String string) {
 		super(model, fuelType, launchDate, successProbability);
 		this.color = color;
         this.autoPilot = autoPilot;
         this.locationOfLaunch = locationOfLaunch;
         this.weatherCondition = weatherCondition;
-        this.morale = 0.9; // Set a high initial morale (90%)
+        this.morale = 0.98; // Historically High Morale
         
         
         // Set mission-specific details for Apollo 9
-        setMissionDuration(260); // e.g., 260 hours
-        setCrewMembers(new String[] { "Commander James McDivitt, Command Module (CM)", "David Scott, Command Module Pilot;", "Russell Schweickart, Lunar Module Pilot;" });
+        setMissionDuration(192); // hours
+        setCrewMembers(new String[] { "Thomas P. Stafford, Commander", "John W. Young, Command Module Pilot", "Eugene A. Cernan, Lunar Module Pilot;" });
 	}
         // Method to simulate morale impact on mission success
         public boolean isMissionSuccessful() {
